@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link rel="preload" href="css/misestilos.css" as="style">
+    <link href="css/misestilos.css" rel="stylesheet">
+    <title>Caba de vinos Jiquilpan</title>
+</head>
+<body>
+    <div class="nav-bg">
+        <header class="encabezado  contenedor"> <!-- Encabezado -->
+            <div class="logo">
+                <img src="img/logo-alianza-plata.png">
+            </div>
+            
+            <div class="buscar">
+                <input type="input" placeholder="Buscar . . ." required>
+            </div>
+            
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+            <!-- dentro del label va el icono de menu -->
+            <label class="toggle-menu" for="btn-menu"> <!-- con for="id" se enlaza con el input de tipo checkbox-->
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                    
+            </label>
+            
+            <!-- aqui esta el input de tipo checkbox que se va a enlazar con el icono -->
+            <input class="enlace" type="checkbox" id="btn-menu">
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+            <nav class="navegacion-principal">
+                <a href="#">Vinos</a>
+                <a href="#">Destilados</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Premium</a>
+                <a href="#">Marcas</a>
+            </nav>
+
+            
+            <div class="pedidos">
+                <p>Mis Pedidos</p>
+                <div class="icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck-delivery" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="7" cy="17" r="2" />
+                        <circle cx="17" cy="17" r="2" />
+                        <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                        <line x1="3" y1="9" x2="7" y2="9" />
+                    </svg>
+                </div>
+            </div>
+                
+            <div class="carrito">
+                <p>Mi Carrito</p>
+                <div class="icono">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+
+    <!-- Sección principal -->
+    <main>
+        <img src="img/landing-grandes-marcas-2022.webp" >
+        <h1> Caba de Vinos Jiquilpan</h1>
+    </main>
+
+
+    <!-- Sección de productos -->
+    <section  class="lista-productos contenedor">
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+               <img class="img-prod" src="img/productos/1971-2.webp"  >
+               <a href="#">Agregar al Carrito</a>
+            </div>
+            <div class="producto-detalle">
+                <p>Whisky The Glenlivet 12 años 750 ml</p>
+
+                <p>$1,195.00</p>
+                <div>
+                    <p>$1,090.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/25853_2.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Whisky Buchanans 12 Años 1L</p>
+
+                <p>$1,195.00</p>
+                <div>
+                    <p>$956.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/22767-1.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Whisky Black & White 1L</p>
+
+                <p>$335.00</p>
+                <div>
+                    <p>$268.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/33162-2.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Whisky Chivas Regal Extra 13 Años Tequila 750 ml</p>
+
+                <p>$845.00</p>
+                <div>
+                    <p>$676.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/33683-2.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Whisky Chivas Regal Extra 13A Sherry 750 ml</p>
+
+                <p>$845.00</p>
+                <div>
+                    <p>$676.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/1943-2.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Whisky Chivas Regal 13 Años 750 ml</p>
+
+                <p>$714.00</p>
+                <div>
+                    <p>$571.20</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/31302-2.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Whisky Ballantines Finest 700 ml</p>
+
+                <p>$235.00</p>
+                <div>
+                    <p>$188.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/2023-1.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Whisky Passport 700 ml</p>
+
+                <p>$195.00</p>
+                <div>
+                    <p>$156.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/30107-1.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Whisky Black Zebra 1.5 L</p>
+
+                <p>$298.00</p>
+                <div>
+                    <p>$238.40</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/35548-1.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Licor Mc Andrews Gree Apple 750 ml</p>
+
+                <p>$785.00</p>
+                <div>
+                    <p>$148.40</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/JACK-DANIELS-APPLE-1.webp"  >
+               <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Jack Daniel's Apple 700 ml</p>
+
+                <p>$465.00</p>
+                <div>
+                    <p>$372.40</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/22178-1.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Jack Daniel's Honey 700 ml</p>
+
+                <p>$465.00</p>
+                <div>
+                    <p>$372.40</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/1984-1.webp"  >
+               <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Whiskey J. Jameson Irish 750 ml</p>
+
+                <p>$405.00</p>
+                <div>
+                    <p>$324.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/30450-1.webp"  >
+                <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Cognac Meukow X.O. 700 ml</p>
+
+                <p>$3,850.00</p>
+                <div>
+                    <p>$3,080.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/34956-2.webp"  >
+               <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Cognac Meukow Vsop Superior Est Metalico 700 ml</p>
+
+                <p>$1,100.00</p>
+                <div>
+                    <p>$880.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+        <div class="producto"> <!-- Inicio del producto -->
+            <div class="producto-imagen">
+                <img class="img-prod"  src="img/productos/4719-1.webp"  >
+               <a href="#">Agregar al Carrito</a>
+            </div>
+            <div>
+                <p>Crema de Whisky Baileys 1 L</p>
+
+                <p>$530.00</p>
+                <div>
+                    <p>$424.00</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div> <!-- Fin de producto -->
+
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

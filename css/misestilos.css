@@ -1,0 +1,304 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #270F2D;
+    --rojo: #C70000;
+    --gris: #757575;
+}
+
+
+
+/*-------------------------------------------------*/
+
+/* el @media esta asta abajo, es el ultimo */
+
+/*-------------------------------------------------*/
+
+
+
+/*   Generales  */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /*  Box Model  */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    /* 1rem */
+    font-family: 'Krub', sans-serif;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.nav-bg {
+    background-color: var(--primario);
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/*Encabezado*/
+
+.encabezado {
+    display: grid;
+    /* column-gap: 2rem; */
+    grid-template-areas:
+        "logo buscador pedido carrito"
+        "logo menu pedido carrito";
+}
+
+
+.logo {
+    max-width: 20rem;
+    grid-area: logo;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+/* Buscador*/
+/* .navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*  position: relative; */
+    padding: 1rem;
+    grid-area: buscador;
+}
+
+.buscar input {
+    width: 90%;
+    height: 4rem;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    color: var(--oscuro);
+    font-weight: normal;
+    outline: none;
+    border-radius: 3rem;
+    /* border: .1rem solid var(--rojo); */
+    /* transition: all 0.6s ease; */
+}
+
+/* .btn{
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: var(--blanco);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     position: absolute;
+    top: 0;
+    right: 0; 
+
+    border-radius: 50%;
+    cursor: pointer;
+} */
+
+
+/* .buscar:hover input{
+    width: 30rem;
+}
+.buscar input:focus{
+    width: 30rem;
+} */
+
+/* Navegación principal*/
+.navegacion-principal {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+    grid-area: menu;
+}
+
+
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.navegacion-principal a:hover {
+
+    /* text-decoration:underline .2rem green; */
+    /* border-bottom-style: solid;*/
+
+    border-bottom: .3rem solid green;
+    padding-bottom: .4rem;
+}
+
+.pedidos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    grid-area: pedido;
+}
+
+
+.carrito {
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+    grid-area: carrito;
+}
+
+.pedidos p,
+.carrito p {
+    font-size: 1rem;
+    color: var(--blanco);
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.pedidos .icono,
+.carrito .icono {
+    cursor: pointer;
+}
+
+
+@media (max-width:1030px) {
+    .encabezado {
+        grid-template-areas:
+            "logo buscador pedido carrito menu";
+    }
+
+    /*     .navegacion-principal {
+        display: none;
+    } */
+    
+    .pedidos p {
+        display: none;
+    }
+
+    .carrito p {
+        display: none;
+    }
+
+    .toggle-menu {
+        top: 3rem;
+        right: 1rem;
+        filter: invert(1);
+        cursor: pointer;
+        margin: 1rem;
+        grid-area: menu;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+.lista-productos {
+    display: grid;
+    justify-content: center;
+    width: 0%;
+}
+
+@media (min-width:765px) {
+    .lista-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width:1280px) {
+    .lista-productos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.producto {
+    height: 57rem;
+    width: 30rem;
+    background-color: antiquewhite;
+    border: 1px solid #000;
+    align-items: center;
+}
+
+.producto-imagen .img-prod {
+    width: 100%;
+}
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+.enlace {
+    display: none; /*se oculta el input de tipo checkbox */
+}
+
+
+@media (max-width:1030px) {
+    .navegacion-principal {
+        width: 30rem; /* tamaño horizontal */
+        height: 100%; /* tamaño vertical */
+        background-image: linear-gradient(var(--primario) 100%, var(--oscuro) 0%); /* este es el color de fondo morado */
+        position: absolute; /* para moverlo libremente */
+        bottom: 0%; /* para que empiece al inicio de abajo a arriba */
+        left: -100%; /* para que este fuera de la paguina */
+        flex-direction: column; /* para cambiar el menu de navegacion a vertical*/
+        transition-duration: 0.5s; /* efecto de transicion */
+    }
+
+    /*  .ocultar-menu-desplegable{
+        transform: translateX(-100);
+    } */
+    #btn-menu:checked~.navegacion-principal { /* para que cuando se active el input de tipo checkbox se le aplique lo siguiente al menu de navegacion*/
+        left: 0%; /* para que empiece al inicio de izquierda a derecha (ya se ve en la paguina)*/
+    }
+
+    .navegacion-principal a { /* dar un poco de espacio a los elemntos del menu para que no este tan junto del borde de la pantalla*/
+        padding-left: 1rem;
+    }
+}
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
